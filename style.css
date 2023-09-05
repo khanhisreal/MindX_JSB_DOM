@@ -1,0 +1,206 @@
+/*import font*/
+@import url('https://fonts.cdnfonts.com/css/8bit-wonder');
+/* font-family: '8BIT WONDER', sans-serif;*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*header*/
+.header {
+    padding: 80px;
+    text-align: center;
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 30px;
+    background-image: url(./images/8-bit-wallpaper-preview.jpg);
+    background-size: contain;
+    color: white;
+}
+
+/*container*/
+.container {
+    background-color: rgb(189, 222, 242);
+    /*minus 80px because we have created a 80-pixel padding*/
+    width: calc(100%);
+    height: calc(100vh - 190.5px);
+    /*temp*/
+    display: flex;
+}
+
+/*calculator*/
+.container .calculator {
+    width: 900px;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/artistic-pixel-art-8-bit-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calculator .case {
+    width: 600px;
+    height: calc(100% - 40px);
+    background-color: lightblue;
+    /* opacity: 0.5; */
+    border-radius: 10px;
+}
+
+.case .console {
+    width: calc(100% - 100px);
+    height: 70px;
+    background-color: beige;
+    margin-top: 50px;
+    border-radius: 10px;
+    /*center here without using flexbox*/
+    margin: auto;
+}
+
+.console p {
+    padding: 20px;
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 30px;
+}
+
+.operator {
+    background-color: beige;
+    width: calc(100% - 100px);
+    margin: auto;
+    margin-top: 30px;
+}
+
+.operator .row {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.operator .row:last-child {
+    border-bottom: 0px;
+}
+
+.operator .row div {
+    padding: 15px;
+    border-right: 1px solid black;
+    width: calc(100% / 4);
+    text-align: center;
+    font-family: '8BIT WONDER', sans-serif;
+    transition: 0.1s;
+}
+
+.operator .row div:hover {
+    background-color: rgb(234, 234, 196);
+    cursor: pointer;
+}
+
+.operator .row div:last-child {
+    border-right: 0px;
+}
+
+.red {
+    color: red;
+}
+
+.button {
+    background-color: lightcoral;
+    width: calc(100% - 100px);
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.button p {
+    display: flex;
+    justify-content: center;
+    transition: 0.1s;
+}
+
+.button:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+/*customise*/
+.container .customise {
+    width: calc(100% - 980px);
+    height: calc(100% - 40px);
+    margin-top: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+
+.customise .title {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 90%);
+    width: 100%;
+    font-family: '8BIT WONDER', sans-serif;
+    padding: 20px;
+}
+
+.attention {
+    width: calc(100% - 15%);
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 60%;
+    word-spacing: 2.5px;
+    text-align: center;
+    margin: auto;
+    line-height: 15px;
+}
+
+
+.buttons {
+    width: calc(100% - 15%);
+    margin: auto;
+    margin-top: 20px;
+    height: calc(100% - 40%);
+    font-family: '8BIT WONDER', sans-serif;
+}
+
+.buttons p {
+    font-size: 60%;
+}
+
+.buttons .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.buttons .option:last-child button {
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+    background-color: lightgrey;
+    color: black;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.buttons .option:last-child button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.option input:hover {
+    cursor: pointer;
+}
+
+.option a {
+    transform: rotate(-20deg);
+    transition: 0.5s;
+}
